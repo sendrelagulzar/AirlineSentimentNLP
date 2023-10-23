@@ -42,10 +42,10 @@ def preprocess(tweet):
 def predict(tweet):
 
     # Loading pretrained CountVectorizer from pickle file
-    vectorizer = load(open('pickle/countvectorizer.pkl', 'rb'))
+    vectorizer = load(open('countvectorizer.pkl', 'rb'))
 
     # Loading pretrained logistic classifier from pickle file
-    classifier = load(open('pickle/logit_model.pkl', 'rb'))
+    classifier = load(open('logit_model.pkl', 'rb'))
 
     # Preprocessing the tweet
     clean_tweet = preprocess(tweet)
