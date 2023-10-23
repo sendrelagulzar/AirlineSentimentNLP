@@ -8,7 +8,7 @@ from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 from nltk.stem import WordNetLemmatizer
-
+nltk.download('stopwords')
 from pickle import dump, load
 
 # classifier_loc = "pickle/logit_model.pkl"
